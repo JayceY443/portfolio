@@ -36,20 +36,6 @@ export default function RootLayout({
       <head>
         <link 
           rel="preload" 
-          as="font"
-          type="font/woff2"
-          href="/fonts/subset/SourceHanSerifCN-Medium-subset.woff2"
-          crossOrigin="anonymous"
-        />
-        <link 
-          rel="preload" 
-          as="font"
-          type="font/woff2"
-          href="/fonts/subset/SourceHanSerifCN-Bold-subset.woff2"
-          crossOrigin="anonymous"
-        />
-        <link 
-          rel="preload" 
           as="image" 
           href="https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250709-160132.jpeg" 
         />
