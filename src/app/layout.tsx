@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import localFont from 'next/font/local'
+import { ThemeProvider } from 'next-themes'
 
 const sourceHanSans = localFont({
   src: [
@@ -64,9 +65,6 @@ const SourceHanSerif = localFont({
 export const metadata: Metadata = {
   title: 'Jayce Yang’s Portfolio',
   description: 'Jayce Yang’s Portfolio',
-  icons: {
-    icon: '/favicon.ico'
-  }
 }
 
 export default function RootLayout({
@@ -75,7 +73,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link 
           rel="preload" 
@@ -97,7 +95,14 @@ export default function RootLayout({
       <body
         className={`${sourceHanSans.variable} ${SourceHanSerif.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
