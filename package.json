@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "npm run build:fonts && next build",
+    "build:fonts": "node scripts/font.mjs",
+    "build:next": "next build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",

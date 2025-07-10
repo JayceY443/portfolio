@@ -6,23 +6,24 @@ import { ThemeProvider } from 'next-themes'
 const SourceHanSerif = localFont({
   src: [
     {
-      path: '../../public/fonts/SourceHanSerifCN-Medium.otf',
+      path: '../../public/fonts/subset/SourceHanSerifCN-Medium-subset.woff2',
       weight: '400',
       style: 'normal'
     },
     {
-      path: '../../public/fonts/SourceHanSerifCN-Bold.otf',
+      path: '../../public/fonts/subset/SourceHanSerifCN-Bold-subset.woff2',
       weight: '700',
       style: 'normal'
     },
   ],
   variable: '--font-source-han-serif',
-  display: 'swap'
+  display: 'swap',
+  preload: true
 })
 
 export const metadata: Metadata = {
-  title: 'Jayce Yang’s Portfolio',
-  description: 'Jayce Yang’s Portfolio',
+  title: 'Jayce Yang\'s Portfolio',
+  description: 'Jayce Yang\'s Portfolio',
 }
 
 export default function RootLayout({
@@ -33,6 +34,20 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link 
+          rel="preload" 
+          as="font"
+          type="font/woff2"
+          href="/fonts/subset/SourceHanSerifCN-Medium-subset.woff2"
+          crossOrigin="anonymous"
+        />
+        <link 
+          rel="preload" 
+          as="font"
+          type="font/woff2"
+          href="/fonts/subset/SourceHanSerifCN-Bold-subset.woff2"
+          crossOrigin="anonymous"
+        />
         <link 
           rel="preload" 
           as="image" 
