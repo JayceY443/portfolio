@@ -22,7 +22,7 @@ import {
 import { Progress } from '@/components/ui/progress'
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { cn } from '@/lib/utils'
+import { cn } from '@/libs/utils'
 import { useState } from 'react'
 
 const skills = [
@@ -92,7 +92,6 @@ export default function SkillsSection() {
   const [tab, setTab] = useState('frontend')
 
   const skillSection = skills.find((skillSection) => skillSection.id === tab)
-  console.log('skillSection', skillSection?.items)
   return (
     <section className="bg-muted/20">
       <div className="container mx-auto px-4 2xl:max-w-[1400px]">
@@ -101,7 +100,7 @@ export default function SkillsSection() {
             variant="outline"
             className="border-primary/30 text-primary mx-auto px-3 py-1 text-xs font-medium tracking-wide uppercase"
           >
-            My Stack
+            My Stacks
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
             技能与技术栈

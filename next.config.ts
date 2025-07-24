@@ -3,7 +3,6 @@ import type { NextConfig } from 'next'
 const repo = process.env.GITHUB_ACTIONS ? '/portfolio' : ''
 
 const nextConfig: NextConfig = {
-  output: 'export',
   basePath: repo,
   assetPrefix: `${repo}/`,
   images: {

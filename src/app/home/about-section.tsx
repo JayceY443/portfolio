@@ -3,7 +3,6 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import { useIsMobile } from '@/hooks/use-mobile'
-import clsx from 'clsx'
 import {
   MapPin,
   Calendar,
@@ -16,7 +15,7 @@ import { useState } from 'react'
 export default function AboutSection() {
   const [isWechatPopoverOpen, setIsWechatPopoverOpen] = useState(false)
   const isMobile = useIsMobile()
-  
+
   return (
     <section className="bg-background">
       <div className="container mx-auto px-4 2xl:max-w-[1400px]">
@@ -73,16 +72,23 @@ export default function AboutSection() {
             </h2>
             <div className="mt-6 space-y-4">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                拥有超过 8 年开发经验，2 年团队管理经验，专注于构建健壮、用户友好的软件解决方案。
+                我拥有超过 8 年开发经验，2 年团队管理经验，专注于构建健壮、用户友好的系统。
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                我的职业生涯始于 2017，我一直在中国互联网大厂工作，专注于广告业务。
-                开发从面向广告主和用户端的应用程序到复杂 BP 系统。
+                我的职业生涯始于 2017 年，在 18 - 25 年一直在中国互联网大厂服务，专注于商业化广告平台和周边业务。开发从面向广告主和用户端的 Applications 到复杂的 BP 系统。
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
                 我热衷于编写干净的代码、深思熟虑的架构设计和持续学习。
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                MBTI 人格：<Popover>
+                  <PopoverTrigger className='cursor-pointer underline'>ENTP-A</PopoverTrigger>
+                  <PopoverContent className="w-auto">
+                      <Image src="https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//my_personality.png" alt="MBTI" width={600} height={600} />
+                  </PopoverContent>
+                </Popover>
               </p>
             </div>
 
@@ -99,8 +105,8 @@ export default function AboutSection() {
               </Button>
               <Popover open={isWechatPopoverOpen} onOpenChange={setIsWechatPopoverOpen}>
                 <PopoverTrigger asChild>
-                  <Button 
-                    variant="outline" 
+                  <Button
+                    variant="outline"
                     className="flex-1 sm:flex-none cursor-pointer"
                     onMouseEnter={() => setIsWechatPopoverOpen(true)}
                     onMouseLeave={() => setIsWechatPopoverOpen(false)}
@@ -108,8 +114,8 @@ export default function AboutSection() {
                     添加我的微信
                   </Button>
                 </PopoverTrigger>
-                <PopoverContent 
-                  className="w-auto" 
+                <PopoverContent
+                  className="w-auto"
                   onMouseEnter={() => setIsWechatPopoverOpen(true)}
                   onMouseLeave={() => setIsWechatPopoverOpen(false)}
                 >

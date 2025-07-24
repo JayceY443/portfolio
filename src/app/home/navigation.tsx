@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
-import { Menu, X, Download } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import ThemeToggle from '@/components/theme-toggle'
 
 const navItems = [
@@ -17,7 +17,7 @@ const navItems = [
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('')
-
+  
   useEffect(() => {
     const handleScroll = () => {
       const sections = navItems.map((item) => item.href.substring(1))
@@ -74,11 +74,6 @@ export default function Navigation() {
           </div>
 
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="outline" size="sm">
-              <Download className="h-4 w-4 mr-2" />
-              下载简历
-            </Button>
-            <Button size="sm">联系我</Button>
             <ThemeToggle />
           </div>
 

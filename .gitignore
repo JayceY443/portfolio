@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# font subset (generated during build)
+# /public/fonts/subset/
+temp-chars.txt

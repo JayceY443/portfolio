@@ -77,7 +77,7 @@ const projectCases = [
     solution:
       '该 Converter 通过调用广告主在 TikTok 后台登录的 Shopify Catalog 接口或对 Shopify 单商品页面进行 DOM 特征分析提取出标准 json，自动化完成对 Product Card 离线转换。',
     result:
-      'Converter 项目上线后，广告主采纳率 86%。Interactive Add-ons 的 Penetration rate +23%。CTR +16%，Advv +2.2%。Shop Ads 综合收入提升 2.3k$/mo。技术方面，平均抓取耗时在 3s 内（p95），DOM 特征分析的内容准确率相比 NLP 的方案准确率更高，达 90% 左右。',
+      'Converter 项目上线后，广告主采纳率 86%。Interactive Add-ons 的 Penetration rate +23%。CTR +16%，Advv +2.2%。Shop Ads 综合收入提升 23k$/mo。技术方面，平均抓取耗时在 3s 内（p95），DOM 特征分析的内容准确率相比 NLP 的方案准确率更高，达 90% 左右。',
     images: [
       'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250430-173115.jpeg',
       'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250430-174455.jpeg',
@@ -119,14 +119,19 @@ const projectCases = [
       4. 广告业务由于长期使用 MVVM 框架缺乏 React 经验。
     `,
     solution:
-      '基于 rc-components 基础组件库，分 3 个阶段（基础组件、复杂基础组件、业务组件），在一年内从零到一完成了组件库的研发。并逐步推广增量地替换掉原 React 业务中不规范组件库，实现设计 + 技术的统一输出。',
+      `基于 rc-components 基础组件库，分 3 个阶段（基础组件、复杂基础组件、业务组件），在一年内从零到一完成了组件库的研发。并逐步推广增量地替换掉原 React 业务中不规范组件库，实现设计 + 技术的统一输出。
+      并且，在 2021 年 H1 组件库扫雷项目中，总结交互和样式问题总计 229 个并完成修复，实现了组件库风险的下降。`,
     images: [
       'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250408-180913.jpeg',
       'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250408-180824.jpeg',
-      'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250408-180859.jpeg'
+      'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250408-180859.jpeg',
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250724-115833.jpeg',
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250724-115835.jpeg',
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250724-115838.jpeg',
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250724-115846.jpeg'
     ],
     result:
-      '快速实现了 36 个组件的开发，包括一个基于 NodeJs 的业务组件脚手架，并成功地集成在了 6 个业务中。',
+      '带领 Marquex 组件库小组（3 人小组），快速实现了 36 个基础组件和 26 个业务组件的开发，包括一个基于 NodeJs 的业务组件脚手架，并成功地集成在了 9 个业务中。',
     technologies: ['React']
   },
   {
@@ -144,11 +149,12 @@ const projectCases = [
     `,
     solution: '移动端 - PC 端同构渐进升级，m3u8 直播技术，兼容微前端。',
     images: [
-      'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250510-103406.jpeg',
-      'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250430-173115.jpeg',
-      'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250403-180648.jpeg'
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250724-112425.jpeg',
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250724-112432.jpeg',
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250724-112436.jpeg',
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250724-112439.jpeg'
     ],
-    result: '万堂书院上线后，半年内 DAU 从 0 - 8k，目前生态仍然繁荣。',
+    result: '万堂书院上线后，半年内 DAU 从 0 - 8k，年内总计 UV 18.9 万人，累计听课次数超 300 万次，目前生态仍然繁荣。',
     technologies: ['React', 'Node.js', 'm3u8', '微前端']
   },
   {
@@ -156,7 +162,11 @@ const projectCases = [
     careerId: 2,
     title: '其他 BP 项目……',
     description: '负责其他多个妈妈产品矩阵的开发 owner',
-    images: []
+    images: [
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250724-120057.jpeg',
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250724-120100.jpeg',
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250724-120054.jpeg'
+    ]
   }
 ]
 
@@ -197,7 +207,6 @@ export default function ExperienceSection() {
 
     if (isMediaModalOpen) {
       document.addEventListener('keydown', handleKeyDown)
-      // 防止背景滚动
       document.body.style.overflow = 'hidden'
     }
 
@@ -212,6 +221,10 @@ export default function ExperienceSection() {
       carousel.scrollPrev()
       setIsStopAutoplay(true)
     }
+  }
+
+  const stopAutoplay = () => {
+    setIsStopAutoplay(true)
   }
 
   const nextProject = () => {
@@ -268,7 +281,7 @@ export default function ExperienceSection() {
             variant="outline"
             className="border-primary/30 text-primary mx-auto px-3 py-1 text-xs font-medium tracking-wide uppercase"
           >
-            MY CAREER
+            MY CAREERS
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
             我的成长历程与项目案例
@@ -309,7 +322,7 @@ export default function ExperienceSection() {
 
             <div className="hidden md:block relative h-48">
               <div className="absolute left-0 right-0 top-0 h-0.5 bg-border"></div>
-              {careerTimeline.map((item, index) => (
+              {careerTimeline.map((career, index) => (
                 <div key={index} className="absolute -translate-y-3 -translate-x-1/2" style={{
                   left: `${25 * (index + 1)}%`
                 }}>
@@ -317,7 +330,7 @@ export default function ExperienceSection() {
                     variant="secondary"
                     className="bg-blue-500 text-white col-span-4 mb-4"
                   >
-                    {item.year}
+                    {career.year}
                   </Badge>
                   <div>
                     <div
@@ -330,15 +343,15 @@ export default function ExperienceSection() {
                       <div className="flex items-start gap-3 mb-3">
                         <div>
                           <h4 className="font-semibold text-lg">
-                            {item.title}
+                            {career.title}
                           </h4>
                           <p className="text-primary font-medium">
-                            {item.company}
+                            {career.company}
                           </p>
                         </div>
                       </div>
                       <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                        {item.description}
+                        {career.description}
                       </p>
                     </div>
                   </div>
@@ -374,20 +387,19 @@ export default function ExperienceSection() {
                 {projectCases.map((project, index) => (
                   <div key={index} className="flex-[0_0_100%] min-w-0 pr-4">
                     <Card className="max-h-[700px] overflow-y-auto h-full border-border/50 hover:border-primary/50 transition-colors">
-                      <CardContent>
-                        <div className="grid grid-cols-2 gap-8">
+                      <CardContent className='h-full'>
+                        <div onMouseEnter={stopAutoplay} className="h-full grid grid-cols-2 gap-8">
                           {project.images.length > 0 && (
                             <div className="hidden md:block relative col-span-1 h-full">
                               <div
                                 className="overflow-hidden h-full select-none"
                                 ref={carousels[index]?.[0]}
-                                style={{ touchAction: 'none' }}
                               >
                                 <div className="flex h-full">
                                   {project.images.map((image, imageIndex) => (
                                     <div
                                       key={`${project.id}-${imageIndex}`}
-                                      className="relative flex-[0_0_100%] min-w-0 h-full"
+                                      className="min-w-0 flex-[0_0_100%] relative h-full"
                                     >
                                       {image.endsWith('.mp4') ? (
                                         <video

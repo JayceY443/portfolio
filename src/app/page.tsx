@@ -5,7 +5,7 @@ import ValuesSection from './home/values-section'
 import ProcessSection from './home/process-section'
 import ExperienceSection from './home/experience-section'
 
-export default function Home() {
+export default async function Home() {
   return (
     <div className="min-h-screen">
       <Navigation />

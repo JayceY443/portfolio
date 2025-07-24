@@ -1,72 +1,30 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import localFont from 'next/font/local'
-
-const sourceHanSans = localFont({
-  src: [
-    {
-      path: '../../public/fonts/SourceHanSansSC-Bold.otf',
-      weight: '700',
-      style: 'normal'
-    },
-    {
-      path: '../../public/fonts/SourceHanSansSC-Regular.otf',
-      weight: '400',
-      style: 'normal'
-    },
-    {
-      path: '../../public/fonts/SourceHanSansSC-Light.otf',
-      weight: '300',
-      style: 'normal'
-    },
-  ],
-  variable: '--font-source-han-sans',
-  display: 'swap'
-})
+import { ThemeProvider } from 'next-themes'
+import OAuth from '@/components/auth/oauth-handler'
 
 const SourceHanSerif = localFont({
   src: [
     {
-      path: '../../public/fonts/SourceHanSerifCN-ExtraLight.otf',
-      weight: '200',
-      style: 'normal'
-    },
-    {
-      path: '../../public/fonts/SourceHanSerifCN-Medium.otf',
+      path: '../../public/fonts/subset/SourceHanSerifCN-Medium-subset.woff2',
       weight: '400',
       style: 'normal'
     },
     {
-      path: '../../public/fonts/SourceHanSerifCN-Medium.otf',
-      weight: '500',
-      style: 'normal'
-    },
-    {
-      path: '../../public/fonts/SourceHanSerifCN-Heavy.otf',
-      weight: '800',
-      style: 'normal'
-    },
-    {
-      path: '../../public/fonts/SourceHanSerifCN-SemiBold.otf',
-      weight: '600',
-      style: 'normal'
-    },
-    {
-      path: '../../public/fonts/SourceHanSerifCN-Bold.otf',
+      path: '../../public/fonts/subset/SourceHanSerifCN-Bold-subset.woff2',
       weight: '700',
       style: 'normal'
     },
   ],
   variable: '--font-source-han-serif',
-  display: 'swap'
+  display: 'swap',
+  preload: true
 })
 
 export const metadata: Metadata = {
-  title: 'Jayce Yang’s Portfolio',
-  description: 'Jayce Yang’s Portfolio',
-  icons: {
-    icon: '/favicon.ico'
-  }
+  title: 'Jayce Yang\'s Portfolio',
+  description: 'Jayce Yang\'s Portfolio',
 }
 
 export default function RootLayout({
@@ -75,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="zh-CN" suppressHydrationWarning>
       <head>
         <link 
           rel="preload" 
@@ -84,20 +42,22 @@ export default function RootLayout({
         />
         <link 
           rel="preload" 
-          as="font" 
-          type="font/woff2" 
-          href="https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//SourceHanSansSC-Light.woff2" 
-        />
-        <link 
-          rel="preload" 
           as="image" 
           href="https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250710-134107.jpeg" 
         />
       </head>
       <body
-        className={`${sourceHanSans.variable} ${SourceHanSerif.variable} antialiased`}
+        className={`${SourceHanSerif.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <OAuth />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
