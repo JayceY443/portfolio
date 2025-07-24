@@ -83,7 +83,7 @@ export default function AboutSection() {
                 我热衷于编写干净的代码、深思熟虑的架构设计和持续学习。
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                我几乎不循规蹈矩，我热衷于发现业务或技术中被忽略的的优化点并加以改进，并对系统产生正向影响。
+                我热爱和团队的人交朋友，热衷于发现业务或技术中被忽略的的优化点并共同改进，对系统产生积极影响。
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 MBTI 人格：<Popover>
