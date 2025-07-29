@@ -59,11 +59,11 @@ const projectCases = [
     result:
       'Adapter 项目上线后，广告主采纳率 24%。Advv +1.42%，TIP 的 penetration rate +1.55%。',
     images: [
-      'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250508-150638.jpeg',
-      'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250508-152158.jpeg'
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250508-150638.jpeg',
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250508-152158.jpeg'
     ],
     attachments: [
-      'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//technical_disclosure_document.pdf'
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//technical_disclosure_document.pdf'
     ],
     technologies: ['Node.js', 'MQ', 'Crawler', 'Redis', 'AI']
   },
@@ -79,9 +79,9 @@ const projectCases = [
     result:
       'Converter 项目上线后，广告主采纳率 86%。Interactive Add-ons 的 Penetration rate +23%。CTR +16%，Advv +2.2%。Shop Ads 综合收入提升 23k$/mo。技术方面，平均抓取耗时在 3s 内（p95），DOM 特征分析的内容准确率相比 NLP 的方案准确率更高，达 90% 左右。',
     images: [
-      'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250430-173115.jpeg',
-      'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250430-174455.jpeg',
-      'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//170516.jpeg'
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250430-173115.jpeg',
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250430-174455.jpeg',
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//170516.jpeg'
     ],
     technologies: ['Node.js', 'MQ', 'Crawler', 'AI']
   },
@@ -98,12 +98,12 @@ const projectCases = [
     4. 业务活跃，数据口径混乱，导致数据分析和决策困难。`,
     solution: '',
     images: [
-      'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250403154001_rec_.mp4'
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250403154001_rec_.mp4'
     ],
     result:
       '在经历一整年的持续迭代和开发后，建立了业务数据看板，技术债得到了有效控制，工单水位下降 80%。平均 FCP 从 5s 下降至 2s；上线了 10+ 个新功能，包括但不限于 Carousel 广告的 Music Selector、Multi-Product Card、Web Anchor 等功能。',
     attachments: [
-      'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//doc.pdf'
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//doc.pdf'
     ],
     technologies: ['React']
   },
@@ -122,9 +122,9 @@ const projectCases = [
       `基于 rc-components 基础组件库，分 3 个阶段（基础组件、复杂基础组件、业务组件），在一年内从零到一完成了组件库的研发。并逐步推广增量地替换掉原 React 业务中不规范组件库，实现设计 + 技术的统一输出。
       并且，在 2021 年 H1 组件库扫雷项目中，总结交互和样式问题总计 229 个并完成修复，实现了组件库风险的下降。`,
     images: [
-      'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250408-180913.jpeg',
-      'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250408-180824.jpeg',
-      'https://rbrzxzkxabhaeiljimvy.storage.supabase.co/v1/object/public/portfolio//20250408-180859.jpeg',
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250408-180913.jpeg',
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250408-180824.jpeg',
+      'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250408-180859.jpeg',
       'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250724-115833.jpeg',
       'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250724-115835.jpeg',
       'https://rbrzxzkxabhaeiljimvy.supabase.co/storage/v1/object/public/portfolio//20250724-115838.jpeg',
